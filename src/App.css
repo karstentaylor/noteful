@@ -5,71 +5,155 @@
 }
 
 .wrapper {
-    width: 100%;
+    width: 90%;
     margin: auto;
+    border: 1px solid black;
 }
 
 .group-column {
     display: flex;
     flex-flow: column;
+    padding: 10px;
     /* justify-content: center; */
     /* width: 100%; */
-}
-
-.group-row {
-    display: flex;
-    flex-flow: row;
-    /* justify-content: center; */
-    /* width: 100%; */
-}
-
-.item {
-    flex: 1;
-}
-
-.item-double {
-    flex: 4;
-}
-
-.note-group-row {
-    justify-content: space-between;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
-.align-self-center {
-    align-self: center;
 }
 
 .border {
     border: 1px solid black;
 }
 
-.width {
-    width: 95%;
-    margin: auto;
-}
-
 .note-margin {
-    margin-top: 20px;
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
 }
 
-.note-padding {
-    padding: 10px;
+header {
+    background-color: #000;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h1, h2, p {
+    margin: 5px;
+}
+
+a.main-link {
+    color: #FFF;
+}
+
+a:hover.main-link, a:visited.main-link {
+    color: #FFF;
 }
 
 a {
+    color: #000;
     text-decoration: none;
 }
 
-ul, li {
+a:hover {
+    color: #A2A1B4;
+    text-decoration: underline;
+}
+
+ul{
     list-style-type: none;
     padding-inline-start: 0;
 }
 
-h2 {
-    margin: 0  0 30px 0;
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 5px;
+}
+
+
+@media all and (min-width: 1000px) {
+    .wrapper {
+        width: 90%;
+        margin: auto;
+        border: 1px solid black;
+    }
+    
+    .group-column {
+        display: flex;
+        flex-flow: column;
+        padding: 20px;
+        /* justify-content: center; */
+        /* width: 100%; */
+    }
+    
+    .group-row {
+        display: flex;
+        flex-flow: row;
+        /* justify-content: center; */
+        /* width: 100%; */
+    }
+    
+    .item {
+        flex: 1;
+    }
+    
+    .item-double {
+        flex: 4;
+    }
+    
+    .note-group-row {
+        justify-content: space-between;
+    }
+    
+    .justify-content-center {
+        justify-content: center;
+    }
+    
+    .align-self-center {
+        align-self: center;
+    }
+    
+    .border {
+        border: 1px solid black;
+    }
+    
+    .note-margin {
+        margin-bottom: 20px;
+    }
+    
+    .padding {
+        padding: 10px;
+    }
+
+    h1 {
+        padding: 0 0 0 20px;
+        text-align: left;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul{
+        list-style-type: none;
+        padding-inline-start: 0;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+    
+    h2 {
+        margin: 0  0 15px 0;
+    }
+
+    form.group-column {
+        width: 50%;
+        margin: auto;
+    }
+
+    textarea {
+        height: 300px;
+    }
+
 }
