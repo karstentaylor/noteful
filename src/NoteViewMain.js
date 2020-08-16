@@ -9,7 +9,7 @@ class NoteViewMain extends React.Component {
     deleteNoteRequest = (noteId) => {
         fetch(`http://localhost:9090/notes/${noteId}`, { 'method': 'DELETE' })
             .then(response => response.json())
-            .then(response => this.context.deleteNoteFromUI(noteId))
+            .then(this.context.deleteNoteFromUI(noteId))
             .then(this.props.history.push('/'))
     };
 
