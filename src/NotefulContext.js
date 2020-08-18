@@ -1,5 +1,6 @@
 import React from 'react';
 
-const NotefulContext = React.createContext({})
+const NotefulContext = React.createContext({
+})
 
-export default NotefulContext;
+export default NotefulContext; 
